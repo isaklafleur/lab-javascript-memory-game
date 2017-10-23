@@ -1,29 +1,33 @@
 body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
-  background: #fefcea; /* Old browsers */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8989ba+0,8989ba+100;Purple+3D */
+  background: #8989ba; /* Old browsers */
   background: -moz-linear-gradient(
     top,
-    #fefcea 0%,
-    #f1da36 100%
+    #8989ba 0%,
+    #8989ba 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    #fefcea 0%,
-    #f1da36 100%
+    #8989ba 0%,
+    #8989ba 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    #fefcea 0%,
-    #f1da36 100%
+    #8989ba 0%,
+    #8989ba 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#fefcea",
-      endColorstr="#f1da36",
+      startColorstr="#8989ba",
+      endColorstr="#8989ba",
       GradientType=0
     ); /* IE6-9 */
+  font-family: "Roboto", sans-serif;
 }
-html {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
 }
 
 #memory-board {
@@ -31,7 +35,6 @@ html {
   width: 800px;
   height: 540px;
   padding: 70px;
-  margin: 0px auto;
   border-radius: 84px;
   box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
 }
@@ -52,38 +55,10 @@ html {
 
 #score {
   background-color: rgba(215, 44, 44, 0.8);
+  width: 20%;
   border-radius: 8px;
-  font-size: 30px;
-  font-family: Arial;
-  width: 200px;
-  padding: 20px;
-  padding-top: 0;
-  margin-left: 75%;
 }
 
 .container {
   position: relative;
-}
-
-h1 {
-  color: rgba(215, 40, 40, 0.9);
-  font-weight: bolder;
-  font-size: 67px;
-  text-align: center;
-  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
-}
-
-h2 {
-  color: #456783;
-  font-weight: bolder;
-  font-size: 35px;
-  text-align: center;
-  text-shadow: 1px #ff0000;
-  text-shadow: 1px #ff0000;
-}
-
-p {
-  font-weight: bolder;
-  font-size: 20px;
-  text-align: center;
 }
