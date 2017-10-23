@@ -1,37 +1,48 @@
 body {
-	background: black;
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Gill Sans Extrabold, sans-serif;
+  display: flex;
+  justify-content: space-around;
 }
-.background {
-	background-image: url("./img/improve-brain-memory-tips1.jpg");
-	background-repeat: no-repeat;
-	background-size: 150%;
-	width: 100%;
-	height: 100vh;
-}
+
 .container {
-	margin-top: 10%;
-	background: silver;
-	border-radius: 25px;
-	padding: 20px;
-	width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background: silver;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
 
 .pic {
-  background-color: #456783;
-	width:71px;
-	height:71px;
-	float:left;
-	margin:10px;
-	padding:0px;
-	font-size:64px;
+  background-color: #00b09b;
+  width: 71px;
+  height: 71px;
+  float: left;
+  margin: 10px;
+  padding: 0px;
+  font-size: 64px;
+  position: relative;
 }
 
 img {
-	width: 100%;
-	height:100%;
-	position: absolute;
-	display: none;
-}
-
-.col-xs-2 {
+  width: 100%;
+  height: 100%;
+  display: none;
 }

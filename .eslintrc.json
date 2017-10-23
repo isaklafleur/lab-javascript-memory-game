@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "jquery": true,
+    "browser": true
+  },
+  "rules": {
+    "quotes": ["error", "double"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "ignore",
+        "named": "ignore",
+        "asyncArrow": "ignore"
+      }
+    ],
+    "arrow-parens": ["error", "as-needed"]
+  }
+}

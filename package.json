@@ -1,0 +1,26 @@
+{
+  "name": "lab-javascript-memory-game",
+  "version": "1.0.0",
+  "description": "![Ironhack Logo](https://i.imgur.com/1QgrNNw.png) # JS | Memory Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaklafleur/lab-javascript-memory-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaklafleur/lab-javascript-memory-game/issues"
+  },
+  "homepage": "https://github.com/isaklafleur/lab-javascript-memory-game#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "eslint": "^4.9.0"
+  }
+}
