@@ -65,13 +65,13 @@ class MemoryGame {
         $(".front,.back").removeClass("blocked");
       } else {
         this.pairsClicked += 1;
-        var self = this;
+        const that = this;
         setTimeout(function() {
-          self.picked_cards[0].style.background = "#456783";
-          self.picked_cards[1].style.background = "#456783";
-          self.picked_cards[0].classList.remove("active");
-          self.picked_cards[1].classList.remove("active");
-          self.picked_cards = [];
+          that.picked_cards[0].style.background = "#456783";
+          that.picked_cards[1].style.background = "#456783";
+          that.picked_cards[0].classList.remove("active");
+          that.picked_cards[1].classList.remove("active");
+          that.picked_cards = [];
           $(".front,.back").removeClass("blocked");
         }, 1000);
       }
@@ -93,12 +93,9 @@ $(document).ready(() => {
   let html = "";
 
   memoryGame.cards.forEach((pic, index) => {
-    html += '<div class= "card" id="card_' + pic.name + '">';
+    html += `<div class="card" id="card_'${pic.name}'">`;
     html += '<div class="back"';
-    html += '    name="' + pic.img + '">';
-    html += "</div>";
-    html += '<div class="front" ';
-    html += 'style="background: url(img/' + pic.img + '") no-repeat"';
+    html += `    name="${pic.img}">`;
     html += "</div>";
     html += "</div>";
   });
@@ -117,7 +114,7 @@ $(document).ready(() => {
       document.getElementById("pairs_guessed").innerHTML =
         memoryGame.pairs_guessed;
       if (memoryGame.finished()) {
-        alert("You wooon!!!");
+        alert("You won!!!");
       }
     }
   });
