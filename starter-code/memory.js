@@ -67,13 +67,13 @@ class MemoryGame {
         this.pairsClicked += 1;
         const that = this;
         setTimeout(function() {
-          that.picked_cards[0].style.background = "#456783";
-          that.picked_cards[1].style.background = "#456783";
+          that.picked_cards[0].style.background = "#f7b733";
+          that.picked_cards[1].style.background = "#f7b733";
           that.picked_cards[0].classList.remove("active");
           that.picked_cards[1].classList.remove("active");
           that.picked_cards = [];
           $(".front,.back").removeClass("blocked");
-        }, 1000);
+        }, 2000);
       }
     }
   }

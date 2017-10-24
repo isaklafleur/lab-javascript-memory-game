@@ -1,49 +1,38 @@
 body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8989ba+0,8989ba+100;Purple+3D */
-  background: #8989ba; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #8989ba 0%,
-    #8989ba 100%
-  ); /* FF3.6-15 */
+  background: #fc4a1a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    top,
-    #8989ba 0%,
-    #8989ba 100%
-  ); /* Chrome10-25,Safari5.1-6 */
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #8989ba 0%,
-    #8989ba 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#8989ba",
-      endColorstr="#8989ba",
-      GradientType=0
-    ); /* IE6-9 */
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: "Roboto", sans-serif;
 }
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   align-items: center;
+  padding: 20px;
 }
 
 #memory-board {
-  background: #dddddd;
-  width: 800px;
-  height: 540px;
-  padding: 70px;
-  border-radius: 84px;
-  box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #ebebeb;
+  padding: 30px;
+  border-radius: 40px;
 }
 
 .card .back {
-  background-color: #456783;
+  background-color: #f7b733;
   width: 71px;
   height: 71px;
-  float: left;
   margin: 10px;
   padding: 20px;
   font-size: 64px;
@@ -54,9 +43,11 @@ body {
 }
 
 #score {
+  text-align: center;
   background-color: rgba(215, 44, 44, 0.8);
   width: 20%;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .container {
