@@ -32,10 +32,9 @@ class MemoryGame {
     this.pickedCards = [];
     this.pairsClicked = 0;
     this.pairsGuessed = 0;
-    this._shuffleCard();
   }
 
-  _shuffleCard() {
+  shuffleCard() {
     let counter = this.cards.length;
     while (counter > 0) {
       const index = Math.floor(Math.random() * counter);
@@ -88,6 +87,7 @@ class MemoryGame {
 let memoryGame;
 $(document).ready(() => {
   memoryGame = new MemoryGame();
+  memoryGame.shuffleCard();
   let html = "";
 
   memoryGame.cards.forEach((pic, index) => {

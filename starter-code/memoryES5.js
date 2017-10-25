@@ -87,9 +87,9 @@ $(document).ready(() => {
   let html = "";
 
   memoryGame.cards.forEach((pic, index) => {
-    html += `<div class="card" id="card_'${pic.name}'">`;
+    html += '<div class="card" id="card_' + pic.name + '">';
     html += '<div class="back"';
-    html += `    name="${pic.img}">`;
+    html += '    name="' + pic.img + '">';
     html += "</div>";
     html += "</div>";
   });
