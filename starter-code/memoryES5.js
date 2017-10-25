@@ -34,11 +34,11 @@ function MemoryGame() {
 }
 
 MemoryGame.prototype.shuffleCard = function() {
-  let counter = this.cards.length;
+  var counter = this.cards.length;
   while (counter > 0) {
-    const index = Math.floor(Math.random() * counter);
+    var index = Math.floor(Math.random() * counter);
     counter -= 1;
-    const temp = this.cards[counter];
+    var temp = this.cards[counter];
     this.cards[counter] = this.cards[index];
     this.cards[index] = temp;
   }
@@ -52,14 +52,14 @@ MemoryGame.prototype.selectCard = function(card) {
     $(".front,.back").addClass("blocked");
     this.pairsClicked += 1;
     this.pickedCards.push(card);
-    const pickedCard1 = this.pickedCards[0].getAttribute("name");
-    const pickedCard2 = this.pickedCards[1].getAttribute("name");
+    var pickedCard1 = this.pickedCards[0].getAttribute("name");
+    var pickedCard2 = this.pickedCards[1].getAttribute("name");
     if (pickedCard1 === pickedCard2) {
       this.pickedCards = [];
       this.pairsGuessed += 1;
       $(".front,.back").removeClass("blocked");
     } else {
-      const that = this;
+      var that = this;
       setTimeout(function() {
         that.pickedCards[0].style.background = "#f7b733";
         that.pickedCards[1].style.background = "#f7b733";
@@ -80,11 +80,11 @@ MemoryGame.prototype.finished = function() {
 // HTML/CSS Interactions
 //******************************************************************
 
-let memoryGame;
+var memoryGame;
 $(document).ready(() => {
   memoryGame = new MemoryGame();
   memoryGame.shuffleCard();
-  let html = "";
+  var html = "";
 
   memoryGame.cards.forEach((pic, index) => {
     html += '<div class="card" id="card_' + pic.name + '">';
