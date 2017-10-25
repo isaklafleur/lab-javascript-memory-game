@@ -20,6 +20,18 @@ body {
   padding: 20px;
 }
 
+#title {
+  text-transform: uppercase;
+}
+
+#score {
+  text-align: center;
+  background-color: white;
+  width: 20%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
 #memory-board {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +41,7 @@ body {
   border-radius: 40px;
 }
 
-.card .back {
+#memory-board .card .back {
   background-color: #f7b733;
   width: 71px;
   height: 71px;
@@ -37,19 +49,7 @@ body {
   padding: 20px;
   font-size: 64px;
 }
-.card .front.blocked,
-.card .back.blocked {
+#memory-board .card .front.blocked,
+#memory-board .card .back.blocked {
   pointer-events: none;
-}
-
-#score {
-  text-align: center;
-  background-color: rgba(215, 44, 44, 0.8);
-  width: 20%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.container {
-  position: relative;
 }
