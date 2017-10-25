@@ -43,7 +43,6 @@ class MemoryGame {
       this.cards[counter] = this.cards[index];
       this.cards[index] = temp;
     }
-    return;
   }
 
   selectCard(card) {
